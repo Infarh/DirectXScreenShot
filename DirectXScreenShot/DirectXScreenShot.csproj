@@ -5,19 +5,22 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MathCore" Version="0.0.86" />
+    <PackageReference Include="MathCore.WinAPI" Version="0.0.3" />
     <PackageReference Include="SharpDX.Direct3D11" Version="4.2.0" />
     <PackageReference Include="SharpDX.DXGI" Version="4.2.0" />
-    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Using Include="DirectXScreenShot" />
     <Using Include="System.Diagnostics" />
     <Using Include="System.Drawing" />
     <Using Include="System.Drawing.Imaging" />
+    <Using Include="SharpDX" />
     <Using Include="SharpDX.DXGI" />
     <Using Include="SharpDX.Direct3D11" />
   </ItemGroup>
